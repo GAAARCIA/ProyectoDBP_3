@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 
 http.createServer((request, response) => {
-	const file = request.url == '/' ? './319094.json' : `./WWW${request.url}`;
+	const file = request.url == '/' ? './319094.json' : `.${request.url}`;
 	
 	fs.readFile(file, (err, data) => {
 		if (err){
