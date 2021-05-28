@@ -1,63 +1,71 @@
-# TU PRIMER SITIO WEB
 
-	Proyecto del tercer parcial de Desarrollo Basado en Plataformas
+# 3er Parcial App
 
-## EMPEZANDO
-
-Para el tercer parcial se requiere realizar un proyecto para la plataforma Android que cumpla las siguientes características:
-
-	a) Debe implementar una interfaz visual que muestre los datos de su curriculum. 
-		(nombre completo, bio, educación y lista de habilidades)
-
-	b) Los datos deben provenir del servidor web creado en el proyecto del parcial II la ruta es /{matricula} 
-		(debe haber una ruta por cada integrante).
-
-	Se debe entregar una actividad que funcione como menú y que lleve a cada curriculum de cada miembro del equipo.
-
-### Prerequisitos
-		
-Se necesita instalar NODEJS para poder ejecutar el servidor. Se instala desde la terminal 
-con los comandos:
-
-	apt-get update
-	apt-get install nodejs
-	
-Y se necesita Android Studio para compilar la aplicación
-
-## Instalación
+Aplicacion mobile para el 3er proyecto de desarrollo basado en plataformas, el cual esta diseñado para consumir informacion directamente desde el servidor que se encuentra en (https://github.com/GAAARCIA/ProyectoDBP_3).
 
 
-## Corriendo pruebas
+## Authors
 
-Para ejecutar el servidor se usa en terminal el siguiente comando:
+- Norma Angélica García Martínez 329528
+- José Daniel Hermosillo López 329694
+- Jesús Martín Loera Esparza 319094
+## Conocimientos Requeridos
 
-	node app.js
-	
-Ya que se está ejecutando el servidor, ponemos la siguiente dirección en el navegador 
-para poder acceder al sitio web:
+ - [Android Studio](https://developer.android.com/studio)
+ - [Volley](https://developer.android.com/training/volley?hl=es)
+ - [Node](https://nodejs.org/es/)
+ - [Ngrok](https://ngrok.com/)
+  
+## Feedback
 
-	localhost:8888
-	
-## Construido con
+Si tienes algun feedback, estariamos agradecidos que nos compartas tu punto de vista.
+  
+## Instalacion
 
-	Visual Studio - Editor de texto
-	Node js - Entorno para ejecutar JavaScript
-	Android Studio - IDE
-	
-## Contribuciones
+Clona el repositorio con git clone de este proyecto
 
-	Sin contribuciones
+```bash 
+  git clone https://github.com/GAAARCIA/ProyectoDBP3_App
+```
 
-## Versión
+Clona el repositorio del servidor.
 
-	Versión 1.0.1
+```bash
+    git clone https://github.com/GAAARCIA/ProyectoDBP_3
+```
 
-## Autores
+Para iniciar el servidor ingrese a la carpeta y ejecute app.js con node
 
-	Norma Angélica García Martínez 329528
-	José Daniel Hermosillo López 329694
-	Jesús Martín Loera Esparza 319094
+```bash
+    cd ProyectoDBP_3
+    node app.js
+```
 
-## Licencia
+Luego ingrese a localhost:8888 para comprobar el estado del servidor.
 
-	No tiene licencia
+Para la app, abra android studio con la ruta 
+
+```bash
+    ./ProyectoDBP3_App
+```
+
+Un ultimo paso es utilizar ngrok para crear el servicio web
+```bash
+    ngrok http 8888
+```
+
+Por ultimo cambie en el proyecto app, en el archivo principal la ruta de ngrok para que se comunique la app con el server.
+
+
+## Tecnologia utilizada
+
+**Client:** Android sdk, Java, Volley.
+
+**Server:** Node, Ngrok.
+
+  
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+  
