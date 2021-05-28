@@ -1,7 +1,8 @@
 
-# 3er Parcial App
+# 3er Parcial Server
 
-Aplicacion mobile para el 3er proyecto de desarrollo basado en plataformas, el cual esta diseñado para consumir informacion directamente desde el servidor que se encuentra en (https://github.com/GAAARCIA/ProyectoDBP_3).
+El repositorio es para el servidor del 3er parcial, el cual alimentara a la aplicacion mobile del otro repositorio (https://github.com/GAAARCIA/ProyectoDBP3_App).
+
 
 
 ## Authors
@@ -11,8 +12,6 @@ Aplicacion mobile para el 3er proyecto de desarrollo basado en plataformas, el c
 - Jesús Martín Loera Esparza 319094
 ## Conocimientos Requeridos
 
- - [Android Studio](https://developer.android.com/studio)
- - [Volley](https://developer.android.com/training/volley?hl=es)
  - [Node](https://nodejs.org/es/)
  - [Ngrok](https://ngrok.com/)
   
@@ -23,10 +22,6 @@ Si tienes algun feedback, estariamos agradecidos que nos compartas tu punto de v
 ## Instalacion
 
 Clona el repositorio con git clone de este proyecto
-
-```bash 
-  git clone https://github.com/GAAARCIA/ProyectoDBP3_App
-```
 
 Clona el repositorio del servidor.
 
@@ -43,23 +38,14 @@ Para iniciar el servidor ingrese a la carpeta y ejecute app.js con node
 
 Luego ingrese a localhost:8888 para comprobar el estado del servidor.
 
-Para la app, abra android studio con la ruta 
-
-```bash
-    ./ProyectoDBP3_App
-```
-
 Un ultimo paso es utilizar ngrok para crear el servicio web
 ```bash
     ngrok http 8888
 ```
 
-Por ultimo cambie en el proyecto app, en el archivo principal la ruta de ngrok para que se comunique la app con el server.
 
 
 ## Tecnologia utilizada
-
-**Client:** Android sdk, Java, Volley.
 
 **Server:** Node, Ngrok.
 
